@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <title>main</title>
 </head>
 <body>
@@ -54,14 +53,8 @@
 </div>
 <!--banner-->
 <div class="banner">
-    <swiper-container
-            navigation
-
-    >
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-    </swiper-container>
+    <div class="max-width">
+    </div>
 </div>
 <!--популярное-->
 <div class="popular">
@@ -206,16 +199,19 @@
 <!--интересное-->
 <div class="interes">
     <div class="max-width">
+        <a href="" class="interes-h">
+            <p>ИНТЕРЕСНОЕ</p>
+            <img src="assets/image/button.svg" alt="">
+        </a>
         <div class="intres-main">
+            <a href="" class="interes-read">
+                <img src="assets/image/book.svg" alt="">
+                <p>Читать</p>
+            </a>
             <div class="interes-image">
                 <img src="assets/image/interes.svg" alt="">
             </div>
-            <a href="" class="interes-h">
-                <p>ИНТЕРЕСНОЕ</p>
-                <img src="assets/image/button.svg" alt="">
-            </a>
             <div class="interes-title">
-                <a href="" class="inters-read"><img src="" alt="">Читать</a>
                 <p>Прыщи и шоколад: почему на самом деле болеют акне</p>
             </div>
             <div class="interes-info">
@@ -224,17 +220,145 @@
             </div>
         </div>
         <div class="interes-side">
-            <div class="interes-side-image">
-                <img src="" alt="">
+            <div class="interes-side-item">
+                <div class="interes-side-image">
+                    <img src="assets/image/interes3.svg" alt="">
+                </div>
+                <div class="interes-side-info">
+                    <a href="" class="interes-info-read"><img src="assets/image/book.svg" alt="">
+                        <p>Читать</p></a>
+                    <div class="interes-info-title">
+                        Вкрутую, в мешочек и всмятку: как и сколько варить яйца
+                    </div>
+                    <div class="interes-info-count">
+                        <div><img src="assets/image/yea-gray.svg" alt="">
+                            <p>100</p></div>
+                        <div><img src="assets/image/message-gray.svg" alt="">
+                            <p>100</p></div>
+                    </div>
+                </div>
             </div>
-            <div class="interes-side-info">
-
+            <div class="interes-side-item">
+                <div class="interes-side-image">
+                    <img src="assets/image/interes2.svg" alt="">
+                </div>
+                <div class="interes-side-info">
+                    <a href="" class="interes-info-read">
+                        <img src="assets/image/book.svg" alt="">
+                        <p>Читать</p>
+                    </a>
+                    <div class="interes-info-title">
+                        Чем полезен творог
+                    </div>
+                    <div class="interes-info-count">
+                        <div><img src="assets/image/yea-gray.svg" alt="">
+                            <p>100</p></div>
+                        <div><img src="assets/image/message-gray.svg" alt="">
+                            <p>100</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="send">
+    <div class="max-width">
+        <div class="send-block">
+            <img src="assets/image/send.svg" alt="">
+            <img src="assets/image/send2.svg" alt="">
+            <div class="send-h1">РАССЫЛКА О ВКУСНОМ И ПОЛЕЗНОМ</div>
+            <div class="send-p">Подписывайтесь и получайте самые интересные предложения первыми</div>
+            <form action="" method="post">
+                <input type="text" name="" placeholder="Введите email">
+                <button type="submit">Подписаться</button>
+            </form>
+            <div class="send-politic">
+                Нажимая «Подписаться», вы соглашаетесь <br>с <a href="">политикой конфиденциальности</a>
             </div>
         </div>
     </div>
 </div>
 <footer>
-
+    <div class="max-width">
+        <div class="footer-info">
+            <div class="footer-info-up">
+                <a href="index.html"><img src="assets/image/logo.svg" alt=""></a>
+            </div>
+            <div class="footer-info-down">
+                <div class="footer-down-accordion">
+                    <div class="footer-accordion-up">
+                        Партнёрам
+                    </div>
+                    <div class="footer-accordion-down">
+                        <p>Новым поставщикам</p>
+                        <p>Для бизнеса</p>
+                        <p>Партнёрская программа</p>
+                    </div>
+                </div>
+                <div class="footer-down-accordion">
+                    <div class="footer-accordion-up">
+                        Карьера
+                    </div>
+                    <div class="footer-accordion-down">
+                        <p>Вакансии</p>
+                        <p>Водитель-курьер</p>
+                        <p>Кассир</p>
+                        <p>Сборщик</p>
+                    </div>
+                </div>
+                <div class="footer-down-accordion">
+                    <div class="footer-accordion-up">
+                        Правовая инфомация
+                    </div>
+                    <div class="footer-accordion-down">
+                        <p>Публичная оферта</p>
+                        <p>Пользовательское соглашение</p>
+                        <p>Политика конфиденциальности</p>
+                        <p>Правила программы лояльности</p>
+                    </div>
+                </div>
+                <div class="footer-down-accordion">
+                    <div class="footer-accordion-up">
+                        Помощь
+                    </div>
+                    <div class="footer-accordion-down">
+                        <p>Правила сайта</p>
+                        <p>Что такое куки?</p>
+                        <p>Поддержка</p>
+                        <p>Контакты</p>
+                    </div>
+                </div>
+                <div class="footer-down-phones">
+                    <div class="down-numbers">
+                        <div class="down-numbers-title">Горячая линия
+                            <span>с 9:00 до 22:00</span></div>
+                        <div class="down-numbers-phone">+7 (999) 123-45-67</div>
+                    </div>
+                    <div class="down-numbers">
+                        <div class="down-numbers-title">Заказ по телефону
+                            <span>с 8:00 до 20:00</span></div>
+                        <div class="down-numbers-phone">+7 (999) 123-45-67</div>
+                    </div>
+                    <div class="down-numbers">
+                        <div class="down-numbers-title">Поддержка онлайн-заказов
+                            <span>Круглосуточно</span></div>
+                        <div class="down-numbers-phone">+7 (999) 123-45-67</div>
+                    </div>
+                    <div class="down-button">
+                        <a href="">Написать нам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-messenger">
+            <a href=""><img src="assets/image/vk.svg" alt=""></a>
+            <a href=""><img src="assets/image/telegram.svg" alt=""></a>
+            <a href=""><img src="assets/image/what.svg" alt=""></a>
+        </div>
+        <div class="footer-right">
+            ©Ознобишина Дарья 2024. Все права защищены
+        </div>
+    </div>
 </footer>
 </body>
 </html>

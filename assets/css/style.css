@@ -173,12 +173,14 @@ header .max-width {
     font-weight: 700;
 }
 
-.popular-end .popular-block:first-child{
+.popular-end .popular-block:first-child {
     text-align: center;
 }
-.popular-start .popular-block:last-child p{
+
+.popular-start .popular-block:last-child p {
     max-width: 190px;
 }
+
 .popular-end .popular-block:last-child p {
     position: absolute;
     top: 107px;
@@ -209,38 +211,42 @@ header .max-width {
     column-gap: 20px;
     row-gap: 16px;
 }
+
 /*популярные товары*/
-.pop{
+.pop {
     font-family: 'montserrat', sans-serif;
     margin-top: 40px;
 }
-.pop-header{
+
+.pop-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pop-header p{
+.pop-header p {
     font-size: 36px;
     font-weight: bold;
 }
 
-.pop-header a p{
+.pop-header a p {
     font-size: 26px;
     font-weight: normal;
 }
-.pop-header a{
+
+.pop-header a {
     align-items: center;
     display: flex;
     gap: 8px;
 }
 
-.pop-main{
+.pop-main {
     margin-top: 30px;
     display: flex;
     gap: 27px;
 }
-.pop-item{
+
+.pop-item {
     display: flex;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     flex-direction: column;
@@ -248,10 +254,12 @@ header .max-width {
     max-width: 280px;
 
 }
-.pop-image{
+
+.pop-image {
     position: relative;
 }
-.pop-star{
+
+.pop-star {
     position: absolute;
     left: 11.5px;
     bottom: 0;
@@ -262,28 +270,33 @@ header .max-width {
     background-color: white;
     border-radius: 5px 5px 0 0;
 }
-.pop-title{
+
+.pop-title {
     font-size: 21px;
     font-weight: 500;
     color: #000;
     margin: 6px 11.5px 21px 11.5px;
 }
-.pop-weight{
+
+.pop-weight {
     color: #BABABA;
     font-size: 20px;
     font-weight: 500;
     margin: 0 11.5px 21px;
 }
-.pop-price{
+
+.pop-price {
     font-size: 23px;
     font-weight: bold;
     margin: 0 11.5px 21px;
 }
-.pop-item form{
+
+.pop-item form {
     padding: 0 11.5px;
     margin-bottom: 11.5px;
 }
-.pop-item form button{
+
+.pop-item form button {
     width: 100%;
     padding: 12px 0;
     border: none;
@@ -292,4 +305,345 @@ header .max-width {
     font-weight: bold;
     border-radius: 5px;
     color: #fff;
+}
+
+/*интересное*/
+.interes {
+    font-family: 'montserrat', sans-serif;
+    margin-top: 40px;
+}
+
+.interes-h {
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.interes-h img {
+    height: 31px;
+}
+
+.intres-main {
+    position: relative;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.interes-read {
+    position: absolute;
+    top: 39px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    background-color: white;
+    padding: 14.5px 27px;
+    border-radius: 10px;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+.interes-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDA674;
+    border-radius: 26px;
+}
+
+.interes-title {
+    position: absolute;
+    max-width: 803px;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 36px;
+    background-color: white;
+    padding: 55px 45px;
+    border-radius: 30px;
+}
+
+.interes-info {
+    position: absolute;
+    font-size: 17px;
+    color: white;
+    display: flex;
+    align-items: center;
+    left: 60px;
+    bottom: 40px;
+    gap: 27px;
+}
+
+.interes-info div {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.interes-side {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 49px;
+    justify-content: space-between;
+}
+
+.interes-side-item {
+    display: flex;
+    gap: 11px;
+    max-width: 508px;
+}
+
+.interes-side-image {
+
+}
+
+.interes-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: start;
+}
+
+.interes-info-read {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    padding: 9px 11px;
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+
+.interes-info-read img {
+    height: 29px;
+}
+
+.interes-info-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.interes-info-count {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.interes-info-count div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+/*форма отправки*/
+.send {
+    margin-top: 40px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.send-block {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F97575;
+    padding: 78px 63px 50px 63px;
+    border-radius: 63px 63px 132px 63px;
+}
+
+.send-block img:first-child {
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    z-index: 0;
+}
+
+.send-block img:nth-child(2) {
+    position: absolute;
+    bottom: 68px;
+    right: 60px;
+    z-index: 0;
+}
+
+.send-h1 {
+    max-width: 675px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.send-p {
+    max-width: 756px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 31px;
+}
+
+.send-politic {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.send-block form {
+    z-index: 2;
+    margin-bottom: 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send-block form input {
+    width: 100%;
+    padding: 43px 0 33px 39px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 17px;
+    outline: none;
+    color: #333;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.send-block form input::placeholder {
+    color: #BCBCBC;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.send-block form button {
+    width: 100%;
+    color: #333;
+    font-size: 32px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 31px 0;
+    border: none;
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.send-politic a {
+    text-decoration-line: underline;
+}
+
+/*footer*/
+footer{
+    background-color: #F8F8F8;
+    font-family: 'montserrat', sans-serif;
+    margin-top: 40px;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-up {
+    margin: 62px 0 25px;
+}
+
+.footer-info-down {
+    display: flex;
+    gap: 29px;
+    margin-bottom: 30px;
+}
+
+.footer-down-accordion {
+}
+
+.footer-accordion-up {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.footer-accordion-down {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.footer-down-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 21px;
+}
+
+.down-numbers {
+}
+
+.down-numbers-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #332;
+}
+.down-numbers-title span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #949494;
+}
+
+.down-numbers-phone {
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.down-button {
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #78BA52;
+    padding: 18px 72px;
+}
+
+.footer-messenger {
+    border-top: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+    padding: 30px 0;
+}
+
+.footer-messenger a{
+    background-color: #EDEDED;
+    height: 88px;
+    width: 88px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.footer-right {
+    color: #333;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    padding: 35px 0;
 }
