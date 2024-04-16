@@ -695,12 +695,20 @@ footer {
     z-index: -1;
 }
 
+
+.catalog {
+    margin-top: 40px;
+}
+
 .catalog .max-width {
     padding-top: 40px;
     display: flex;
 
     gap: 58px;
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
     padding-left: 80px;
 }
 
@@ -708,6 +716,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-left: 430px;
 
 }
 
@@ -846,7 +855,7 @@ footer {
     padding-top: 59px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 38px;
+    gap: 24px;
 }
 
 .catalog-main-block {
@@ -875,29 +884,52 @@ footer {
     display: flex;
     align-items: center;
     gap: 2px;
-    padding: 6.73px 5.5px 10px 5.5px;
-    background-color: white;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
     border-radius: 5px 5px 0 0;
+}
+
+.catalog-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-star p {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
 }
 
 .catalog-title {
     font-size: 28px;
     font-weight: 500;
-    color: #000;
-    margin: 23px 16.8px 17px 16.8px;
-    height: 68px;
+    color: #333;
+    font-family: 'montserrat', sans-serif;
+
+    margin: 23px 16.8px 14px 16.8px;
+    height: 64px;
 }
 
 .catalog-weight {
     color: #BABABA;
     font-size: 24px;
     font-weight: 500;
+    font-family: 'montserrat', sans-serif;
+
     margin: 0 16.8px 17px;
 }
 
 .catalog-price {
-    font-size: 23px;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+
     margin: 0 16.8px 17px;
 
     border-radius: 10px;
@@ -905,6 +937,7 @@ footer {
     height: 56px;
     background: #f1f1f1;
 }
+
 
 .catalog-main-block form {
     padding: 0 11.5px;
@@ -926,6 +959,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 699px;
     height: 66px;
     gap: 58px;
@@ -955,7 +989,12 @@ footer {
     width: 81px;
     height: 66px;
     background: #78ba52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.active-number a {
     font-family: 'montserrat', sans-serif;
     color: #fff;
     font-size: 30px;
@@ -963,22 +1002,29 @@ footer {
 }
 
 .number {
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #8b8b8b;
     padding: 20px 40px;
     width: 81px;
     height: 66px;
     background: #fff;
+}
 
+.number a {
     font-family: 'montserrat', sans-serif;
     color: #8b8b8b;
     font-size: 30px;
     font-weight: 500;
 }
 
-.switch--number {
+.switch-number {
+
     display: flex;
+    flex-direction: row;
     gap: 42px;
+    width: 205px;
+    height: 66px;
 
 }
