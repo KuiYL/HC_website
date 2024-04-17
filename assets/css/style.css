@@ -1096,6 +1096,12 @@ footer {
     border: 1px solid #8B8B8B;
     padding: 20px;
     margin-bottom: 35px;
+
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    color: #8B8B8B;
+    font-weight: 400;
+    letter-spacing: 0%;
 }
 
 .login form input::placeholder,
@@ -1151,4 +1157,255 @@ footer {
     text-align: center;
     color: #fff;
     background: #78ba52;
+}
+
+
+.cart {
+    margin-top: 24px;
+}
+
+.cart-path a {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #9b9b9b;
+}
+
+.cart-title {
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #333;
+}
+
+.cart-parts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftCartTitle {
+    margin-bottom: 16px;
+    font-family: 'montserrat', sans-serif;
+
+    font-weight: 500;
+    font-size: 26px;
+    color: #333;
+}
+
+.cart-left form {
+    width: 502px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-left form label {
+    margin-top: 10px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    color: #4C4C4C;
+    margin-bottom: 10px;
+}
+
+.cart-left form input {
+    border-radius: 5px;
+    width: 100%;
+    height: 86px;
+    border: 1px solid #8B8B8B;
+    padding: 32px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    color: #8B8B8B;
+    font-weight: 400;
+    letter-spacing: 0%;
+}
+
+.cart-left form input::placeholder {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    color: #8B8B8B;
+    font-weight: 400;
+    letter-spacing: 0%;
+}
+
+.cart-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.countCart {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.countCart a {
+    font-family: 'montserrat', sans-serif;
+
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+}
+
+.countCart p {
+    font-family: 'montserrat', sans-serif;
+
+    font-weight: 500;
+    font-size: 28px;
+    color: #000;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.productCart {
+    margin-top: 49px;
+    padding-bottom: 49px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.infaCart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.titleCartProduct {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #1e1e1e;
+}
+
+
+
+.extraInfaCart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.priceCart {
+    border-radius: 10px;
+    width: 113px;
+    height: 40px;
+
+    background: #dda674;
+
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.counterCart {
+    display: flex;
+    width: 176px;
+    height: 58px;
+}
+
+.counter--minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background: #78ba52;
+}
+
+.counter--count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #78ba52;
+    width: 60px;
+    height: 58px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #333;
+}
+
+.counter--plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background: #78ba52;
+}
+
+.infaPriceCart {
+    margin-top: 17px;
+    padding-bottom: 17px;
+
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.infaPriceText {
+    font-family: 'montserrat', sans-serif;
+
+    font-weight: 500;
+    font-size: 25px;
+    color: #333;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infaPriceExtra {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8b8b8b;
+}
+
+.infaPriceMain {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333;
+}
+
+.buttonCart {
+    margin-top: 25px;
+    border-radius: 5px;
+    width: 560px;
+    height: 77px;
+    background: #78ba52;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
