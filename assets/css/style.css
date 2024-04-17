@@ -24,6 +24,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+.max-width-form {
+    max-width: 539px;
+    margin: 0 auto;
+}
+
+.container {
+    flex: 1;
+}
 
 @font-face {
     font-family: 'montserrat';
@@ -1027,4 +1035,76 @@ footer {
     width: 205px;
     height: 66px;
 
+}
+
+
+.login, .register, .changeUser {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-h, .register-h, .changeUser-h {
+    font-family: 'montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    color: #111;
+    margin-bottom: 22px;
+}
+
+.login form, .register form, .changeUser form {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form label, .register form label,  .changeUser form label {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    color: #4C4C4C;
+    margin-bottom: 16px;
+}
+
+.login form input, .register form input, .changeUser form input {
+    border: 1px solid #8B8B8B;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+.login form input::placeholder, .register form input::placeholder, .changeUser form input::placeholder  {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    color: #8B8B8B;
+    font-weight: 400;
+    letter-spacing: 0%;
+}
+
+.login button, .register button, .changeUser button {
+    color: #fff;
+    background-color: #78ba52;
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0%;
+    border: none;
+    margin-bottom: 35px;
+}
+
+.login a, .register a {
+    font-family: 'montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #78ba52;
+    text-align: center;
+    padding: 20px 0;
 }

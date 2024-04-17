@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Регистрация</title>
 </head>
 
 <body>
-    <!-- header -->
     <header>
         <div class="max-width">
             <div class="header-logo">
@@ -51,107 +50,31 @@
             <a href="">Полезные статьи</a>
         </div>
     </div>
-    <!-- category -->
-    <div class="category">
-        <div class="max-width">
-            <div class="category-path"><a href="index.html">Главная / </a> <a href="category.html">Каталог</a></div>
-            <div class="category-title">Каталог товаров</div>
-            <div class="category-blocks">
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Готовые рационы</p>
-                        <img src="assets/image/gotovye_category.svg" alt="">
-                    </a>
+    <div class="container">
+        <div class="max-width-form">
+            <div class="register">
+                <div class="register-h">
+                    Регистрация
                 </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Готовая еда</p>
-                        <img src="assets/image/gotovaia_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Сладости и десерты</p>
-                        <img src="assets/image/sladosti_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Фрукты, ягоды и овощи</p>
-                        <img src="assets/image/fructs_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Молочные продукты, яйца</p>
-                        <img src="assets/image/moloko_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Мясо и птица</p>
-                        <img src="assets/image/meat_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Хлеб и выпечка</p>
-                        <img src="assets/image/bread_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Морепродукты и рыба</p>
-                        <img src="assets/image/fish_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Крупы и макароны</p>
-                        <img src="assets/image/macaron_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Сыры</p>
-                        <img src="assets/image/chesee_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Напитки</p>
-                        <img src="assets/image/drinks_category.svg" alt="">
-                    </a>
-                </div>
-                <div class="category-block">
-                    <a href="catalog.html">
-                        <p>Чай и кофе</p>
-                        <img src="assets/image/tea_category.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- send -->
-    <div class="send">
-        <div class="max-width">
-            <div class="send-block">
-                <img src="assets/image/send.svg" alt="">
-                <img src="assets/image/send2.svg" alt="">
-                <div class="send-h1">РАССЫЛКА О ВКУСНОМ И ПОЛЕЗНОМ</div>
-                <div class="send-p">Подписывайтесь и получайте самые интересные предложения первыми</div>
                 <form action="" method="post">
-                    <input type="text" name="" placeholder="Введите email">
-                    <button type="submit">Подписаться</button>
+                    <label for="name">Имя*</label>
+                    <input type="text" name="" id="name" placeholder="Введите ваше имя">
+                    <label for="surname">Фамилия*</label>
+                    <input type="text" name="" id="surname" placeholder="Введите вашу фамилию">
+                    <label for="login">Логин*</label>
+                    <input type="text" name="" id="login" placeholder="Придумайте логин">
+                    <label for="email">Эл. адрес*</label>
+                    <input type="text" name="" id="email" placeholder="Укажите эл. адрес">
+                    <label for="password">Пароль*</label>
+                    <input type="text" name="" id="password" placeholder="Введите пароль не 6 символов">
+                    <label for="re_password">Повторите пароль*</label>
+                    <input type="text" name="" id="re_password" placeholder="Введите пароль еще раз">
+                    <button type="submit">Зарегистрироваться</button>
+                    <a href="login.html">Уже есть аккаунт</a>
                 </form>
-                <div class="send-politic">
-                    Нажимая «Подписаться», вы соглашаетесь <br>с <a href="">политикой конфиденциальности</a>
-                </div>
             </div>
         </div>
     </div>
-    <!-- footer -->
     <footer>
         <div class="max-width">
             <div class="footer-info">
@@ -205,20 +128,17 @@
                     <div class="footer-down-phones">
                         <div class="down-numbers">
                             <div class="down-numbers-title">Горячая линия
-                                <span>с 9:00 до 22:00</span>
-                            </div>
+                                <span>с 9:00 до 22:00</span></div>
                             <div class="down-numbers-phone">+7 (999) 123-45-67</div>
                         </div>
                         <div class="down-numbers">
                             <div class="down-numbers-title">Заказ по телефону
-                                <span>с 8:00 до 20:00</span>
-                            </div>
+                                <span>с 8:00 до 20:00</span></div>
                             <div class="down-numbers-phone">+7 (999) 123-45-67</div>
                         </div>
                         <div class="down-numbers">
                             <div class="down-numbers-title">Поддержка онлайн-заказов
-                                <span>Круглосуточно</span>
-                            </div>
+                                <span>Круглосуточно</span></div>
                             <div class="down-numbers-phone">+7 (999) 123-45-67</div>
                         </div>
                         <div class="down-button">
