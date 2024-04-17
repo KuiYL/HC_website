@@ -24,6 +24,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .max-width-form {
     max-width: 539px;
     margin: 0 auto;
@@ -796,6 +797,14 @@ footer {
 }
 
 .catalog-main-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.catalog-main-title p {
+
     font-family: 'montserrat', sans-serif;
     font-size: 36px;
     font-weight: 500;
@@ -805,9 +814,10 @@ footer {
 .catalog-main-extra {
     padding-top: 7px;
     display: flex;
-    align-items: flex-end;
-    /* justify-content: space-between; */
-    gap: 246px;
+    width: 100%;
+    align-items: end;
+    justify-content: space-between;
+    /* gap: 246px; */
     flex-direction: row;
     max-width: 840px;
 }
@@ -1038,7 +1048,9 @@ footer {
 }
 
 
-.login, .register, .changeUser {
+.login,
+.register,
+.changeUser {
     margin-top: 40px;
     margin-bottom: 40px;
 
@@ -1048,7 +1060,9 @@ footer {
     align-items: center;
 }
 
-.login-h, .register-h, .changeUser-h {
+.login-h,
+.register-h,
+.changeUser-h {
     font-family: 'montserrat', sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -1057,13 +1071,17 @@ footer {
     margin-bottom: 22px;
 }
 
-.login form, .register form, .changeUser form {
+.login form,
+.register form,
+.changeUser form {
     width: 480px;
     display: flex;
     flex-direction: column;
 }
 
-.login form label, .register form label,  .changeUser form label {
+.login form label,
+.register form label,
+.changeUser form label {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -1072,13 +1090,17 @@ footer {
     margin-bottom: 16px;
 }
 
-.login form input, .register form input, .changeUser form input {
+.login form input,
+.register form input,
+.changeUser form input {
     border: 1px solid #8B8B8B;
     padding: 20px;
     margin-bottom: 35px;
 }
 
-.login form input::placeholder, .register form input::placeholder, .changeUser form input::placeholder  {
+.login form input::placeholder,
+.register form input::placeholder,
+.changeUser form input::placeholder {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
     color: #8B8B8B;
@@ -1086,7 +1108,9 @@ footer {
     letter-spacing: 0%;
 }
 
-.login button, .register button, .changeUser button {
+.login button,
+.register button,
+.changeUser button {
     color: #fff;
     background-color: #78ba52;
     font-size: 24px;
@@ -1097,7 +1121,8 @@ footer {
     margin-bottom: 35px;
 }
 
-.login a, .register a {
+.login a,
+.register a {
     font-family: 'montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -1107,4 +1132,23 @@ footer {
     border: 1px solid #78ba52;
     text-align: center;
     padding: 20px 0;
+}
+
+.extraButtonAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.addProduct {
+    border-radius: 10px;
+    padding: 10px;
+    width: 199px;
+    height: 43px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    background: #78ba52;
 }
