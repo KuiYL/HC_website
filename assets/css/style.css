@@ -1638,12 +1638,12 @@ footer {
     flex: 1;
 }
 
-.accordion
-{
+.accordion {
     padding-top: 52px;
     margin-bottom: 44px;
 
 }
+
 .details {
     border-top: 1px solid #8b8b8b;
     border-bottom: 1px solid #8b8b8b;
@@ -1655,14 +1655,14 @@ footer {
     padding-top: 35px;
     padding-bottom: 15px;
 
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     transition: 0.3s;
     overflow: hidden;
-  }
-  
-  .details::after {
-    
+}
+
+.details::after {
+
     z-index: 12;
     position: absolute;
     right: 24px;
@@ -1676,17 +1676,17 @@ footer {
     transform: rotate(-45deg);
     transform-origin: center;
     transition: .3s;
-  }
-  
-  .details[open]::after {
+}
+
+.details[open]::after {
     transform: rotate(45deg);
-  }
-  
-  .details[open] .details__content {
+}
+
+.details[open] .details__content {
     margin-top: 0;
-  }
-  
-  .details__title {
+}
+
+.details__title {
     z-index: 10;
     position: relative;
     background: #fff;
@@ -1701,28 +1701,65 @@ footer {
     list-style: none;
     font-weight: 700;
     transition: .3s;
-  }
-  
-  .details__content {
+}
+
+.details__content {
     z-index: 0;
     position: relative;
     padding: 24px;
     font-size: 18px;
     margin-top: -100px;
     transition: .3s;
-  }
+}
 
-  .details__content p{
+.details__content p {
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     font-size: 22px;
     color: #333;
-  }
-  
-  .details__content p:last-child {
+}
+
+.details__content p:last-child {
     margin-bottom: 0;
-  }
-  .details__content p:first-child {
+}
+
+.details__content p:first-child {
     margin-top: 0;
-  }
-  
+}
+
+.buttonActionProducts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttonChangeProducts,
+.buttonDeleteProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 247px;
+    height: 52px;
+}
+
+
+
+.buttonChangeProducts {
+    background: rgba(96, 141, 208, 0.88);
+}
+
+.buttonDeleteProducts {
+    background: #E07272;
+}
+
+.buttonAddProducts a,
+.buttonChangeProducts a,
+.buttonDeleteProducts a {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
