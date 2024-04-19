@@ -130,30 +130,51 @@ header .max-width {
 }
 
 /*banner*/
-.banner {}
-
-.swiper-button-next,
-.swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+.banner {
+    margin-top: 30px;
+}
+.custom-controls {
+    position: relative;
+}
+.custom-controls button{
+    background-color: rgb(120, 186, 82);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
     border-radius: 50%;
+    padding: 21px 30px;
+
+}
+
+.glide__slide{
     text-align: center;
-    line-height: 50px;
-    cursor: pointer;
 }
 
-.swiper-button-prev {
-    left: 20px;
+.banner-bottom{
+    max-width: 920px;
+    margin: 29px auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.swiper-button-next {
-    right: 20px;
+.banner-bottom a{
+    font-size: 36px;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    background-color: rgb(120, 186, 82);
+    color: white;
+    padding: 16px 28px;
+    border-radius: 13px;
 }
+
+.glide__slide p{
+    margin-top: 28px;
+    font-size: 36px;
+    font-family: montserrat-italic, sans-serif;
+    font-weight: 500;
+}
+/* Добавляем стили для кнопок */
 
 /*popular*/
 .popular {
