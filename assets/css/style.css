@@ -2177,6 +2177,28 @@ footer {
         font-size: 23px;
     }
 
+    .red-h {
+        font-size: 30px;
+    }
+    
+    .red-input {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .red-input label {
+        font-size: 18px;
+    }
+    
+    .red button {
+        font-size: 12px;
+        padding: 16px 94.5px;
+    }
+
+    .red {
+        margin: 74px 20px;
+    }
+
 }
 
 
@@ -2393,4 +2415,26 @@ footer {
         font-size: 20px;
     }
 
+    .red-h {
+        font-size: 30px;
+    }
+    
+    .red-input {
+        width: auto;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .red-input label {
+        font-size: 18px;
+    }
+    
+    .red button {
+        font-size:14px;
+        padding: 12px 80px;
+    }
+
+    .red {
+        margin: 74px 30px;
+    }
 }
