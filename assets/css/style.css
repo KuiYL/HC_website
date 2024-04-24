@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -14,10 +15,18 @@ a {
 }
 
 /*главные стили*/
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+button {
+    font-family: 'montserrat', sans-serif;
 }
 
 .max-width {
@@ -32,6 +41,12 @@ body {
 
 .container {
     flex: 1;
+}
+
+.button-up {
+    position: fixed;
+    bottom: 150px;
+    right: 18px;
 }
 
 @font-face {
@@ -166,7 +181,7 @@ header .max-width {
     font-weight: 500;
     background-color: rgb(120, 186, 82);
     color: white;
-    padding: 16px 28px;
+    padding: 10px 28px;
     border-radius: 13px;
 }
 
@@ -277,6 +292,7 @@ header .max-width {
     margin-top: 30px;
     display: flex;
     gap: 27px;
+    overflow-x: auto;
 }
 
 .pop-item {
@@ -435,7 +451,8 @@ header .max-width {
     max-width: 508px;
 }
 
-.interes-side-image {}
+.interes-side-image {
+}
 
 .interes-side-info {
     display: flex;
@@ -599,7 +616,8 @@ footer {
     margin-bottom: 30px;
 }
 
-.footer-down-accordion {}
+.footer-down-accordion {
+}
 
 .footer-accordion-up {
     font-size: 18px;
@@ -622,7 +640,8 @@ footer {
     gap: 21px;
 }
 
-.down-numbers {}
+.down-numbers {
+}
 
 .down-numbers-title {
     font-weight: 700;
@@ -1214,20 +1233,18 @@ footer {
     margin-bottom: 16px;
     font-family: 'montserrat', sans-serif;
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 26px;
     color: #333;
 }
 
-.cart-left form,
-.cart-right form {
+.cart-left form {
     width: 502px;
     display: flex;
     flex-direction: column;
 }
 
-.cart-left form label,
-.cart-right form label {
+.cart-left form label {
     margin-top: 10px;
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
@@ -1237,8 +1254,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.cart-left form input,
-.cart-right form input {
+.cart-left form input {
     border-radius: 5px;
     width: 100%;
     height: 86px;
@@ -1251,7 +1267,6 @@ footer {
 
 }
 
-.cart-left form input::placeholder,
 .cart-left form input::placeholder {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
@@ -1340,8 +1355,8 @@ footer {
 
 .counterCart {
     display: flex;
-    width: max-content;
-    height: max-content;
+    width: 176px;
+    height: 58px;
 }
 
 .counter--minus {
@@ -1418,7 +1433,7 @@ footer {
 .buttonCart {
     margin-top: 25px;
     border-radius: 5px;
-    width: 100%;
+    width: 560px;
     height: 77px;
     background: #78ba52;
     font-family: 'montserrat', sans-serif;
@@ -1561,7 +1576,6 @@ footer {
     text-align: center;
     color: #fff;
 }
-
 
 
 .block-name {
@@ -1773,7 +1787,6 @@ footer {
 }
 
 
-
 .buttonChangeProducts {
     background: rgba(96, 141, 208, 0.88);
 }
@@ -1966,475 +1979,955 @@ footer {
     border: 1px solid #78ba52;
     background: #fff;
     color: #333;
-
 }
 
-.cart-partsMobile {
-    display: none;
-}
-
-
-@media screen and (max-width: 700px) {
-
+/*адаптив для планшета*/
+@media (max-width: 668px) {
     .max-width {
-        max-width: 508px;
-        margin: 0 auto;
-    }
-
-    .max-width-form {
-        max-width: 440px;
-        margin: 0 auto;
-    }
-
-    .login,
-    .register,
-    .changeUser {
-        margin-top: 42px;
-        margin-bottom: 44px;
-    }
-
-    .login-h,
-    .register-h,
-    .changeUser-h {
-        font-size: 26px;
-        margin-bottom: 18px;
-    }
-
-    .login form,
-    .register form,
-    .changeUser form {
-        width: 440px;
-    }
-
-    .login form label,
-    .register form label,
-    .changeUser form label {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-
-    .login form input,
-    .register form input,
-    .changeUser form input {
-        margin-bottom: 22px;
-        font-size: 20px;
-    }
-
-    .login form input::placeholder,
-    .register form input::placeholder,
-    .changeUser form input::placeholder {
-        font-size: 20px;
-    }
-
-    .login button,
-    .register button,
-    .changeUser button {
-        font-size: 20px;
-        margin-bottom: 18px;
-    }
-
-    .login a,
-    .register a {
-        font-size: 20px;
-    }
-
-    .cart {
-        margin-top: 24px;
-    }
-
-    .cart-path a {
-        font-size: 16px;
-    }
-
-    .cart-title {
-        margin-top: 18px;
-        margin-bottom: 18px;
-        font-size: 26px;
-    }
-
-    .cart-partsMobile {
-        display: flex;
-        flex-direction: column;
+        padding: 0 35px;
+        margin: 0;
         width: 100%;
-        gap: 40px;
     }
 
-    .cart-parts {
+    header {
+        padding: 0 35px;
+    }
+
+    .header-menu {
         display: none;
     }
 
-    .leftCartTitle {
-        margin-bottom: 16px;
+    .header-catalog {
+        display: none;
+    }
+
+    header .max-width {
+        gap: 39px;
+        padding: 20px 0;
+    }
+
+    .header-logo img {
+        width: 226px;
+    }
+
+    .header-input input {
+        max-width: 258px;
+        height: 22px;
+    }
+
+    .header-input button img {
+        width: 11.5px;
+    }
+
+    .header-input button {
+        padding: 3px 0 0;
+        height: 22px;
+        width: 22px;
+    }
+
+    .categories {
+        overflow-x: auto;
+    }
+
+    .categories .max-width {
+        border-top: 1px solid #d9d9d9;
+        padding-left: 6px;
+        gap: 39px;
+        overflow-x: auto;
+    }
+
+    .categories .max-width a {
+        font-size: 16px;
+        text-wrap: nowrap;
+    }
+
+    .categories .max-width {
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    .banner .max-width {
+        padding: 12px 35px 0 35px;
+    }
+
+    .glide__slide p {
         font-size: 26px;
+        max-width: 510px;
+        margin: 0 auto;
     }
 
-    .cart-right form {
-        width: 100%;
-
+    .glide__arrow--left {
+        left: 1em !important;
     }
 
-    .cart-right form label {
-        font-size: 18px;
+    .glide__arrow--right {
+        right: 1em !important;
     }
 
-    .cart-right form input {
-        max-height: 62px;
-        font-size: 18px;
-    }
-
-    .cart-right form input::placeholder {
-        font-size: 18px;
-    }
-
-    .countCart {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .countCart a {
-        font-size: 16px;
-    }
-
-    .countCart p {
-        font-size: 16px;
-    }
-
-    .delete {
-        gap: 5px;
-        height: 20px;
-    }
-
-    .productCart {
-        margin-top: 30px;
-        padding-bottom: 0;
-        display: flex;
-        gap: 20px;
-        border-bottom: 0px;
-    }
-
-    .infaCart {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 16px;
-    }
-
-    .titleCartProduct {
+    .banner-bottom a {
         font-size: 19px;
     }
 
-    .extraInfaCart {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
+    .custom-controls button img {
+        height: 21px;
+        width: 12px;
     }
 
-    .priceCart {
-        width: 104px;
-        height: 34px;
-        font-size: 16px;
+    .custom-controls {
+        left: -80px;
     }
 
-    .counterCart {
-        display: flex;
-        width: max-content;
-        height: max-content;
-
+    .popular-block p {
+        font-size: 20px;
     }
 
-    .counter--minus,
-    .counter--plus {
-        width: 42px;
-        height: 42px;
+    .popular-categories {
+        flex-wrap: wrap;
+        gap: 18px;
     }
 
-    .counter--count {
-        width: 50px;
-        height: 42px;
+    .popular-end {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .popular-block p {
+        left: 15px;
+    }
+
+    .popular-start .popular-block:last-child p {
+        max-width: 100px;
+    }
+
+    .popular-end .popular-block:nth-child(3) p {
+        text-wrap: nowrap;
+        left: 240px;
+    }
+
+    .popular-end .popular-block:nth-child(1) img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .popular-end .popular-block:nth-child(2) img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .popular-end .popular-block:nth-child(3) img {
+        max-width: 450px;
+        max-height: 220px;
+    }
+
+    .popular-start {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 18px;
+    }
+
+    .popular-h {
         font-size: 26px;
     }
 
-    .infaPriceCart {
-        margin-top: 31px;
-        padding-bottom: 17px;
-        border-top: 1px solid #8b8b8b;
-        border-bottom: 1px solid #8b8b8b;
+    .popular-start .popular-block img {
+        max-width: 220px;
+        max-height: 220px;
     }
 
-    .infaPriceText,
-    .infaPriceMain {
-        font-size: 22px;
+    .pop-header p {
+        font-size: 26px;
     }
 
-    .infaPriceExtra {
-        margin-top: 17px;
-    }
-
-    .buttonCart {
-        height: 69px;
-        font-size: 23px;
-    }
-
-    .red-h {
-        font-size: 30px;
-    }
-    
-    .red-input {
-        gap: 15px;
-        margin-top: 15px;
-    }
-    
-    .red-input label {
+    .pop-header a p {
         font-size: 18px;
     }
-    
-    .red button {
+
+    .pop-header a img {
+        height: 15px;
+    }
+
+    .pop-item {
+        max-width: 199px;
+    }
+
+    .pop-item .pop-image img {
+        max-width: 199px;
+    }
+
+    .pop-star {
+        font-size: 6px;
+    }
+
+    .pop-star img {
+        height: 7px;
+    }
+
+    .pop-title {
         font-size: 12px;
-        padding: 16px 94.5px;
+        max-width: 134px;
     }
 
-    .red {
-        margin: 74px 20px;
+    .pop-weight {
+        font-size: 12px;
     }
 
-}
-
-
-@media screen and (max-width: 400px) {
-
-    .max-width {
-        max-width: 316px;
-        margin: 0 auto;
+    .pop-price {
+        font-size: 9px;
+        font-weight: 700;
     }
 
-    .max-width-form {
-        max-width: 316px;
-        margin: 0 auto;
+    .pop-item form button {
+        font-size: 12px;
     }
 
-    .login,
-    .register,
-    .changeUser {
-        margin-top: 30px;
-        margin-bottom: 26px;
-    }
-
-    .login-h,
-    .register-h,
-    .changeUser-h {
-        font-size: 21px;
-        margin-bottom: 18px;
-    }
-
-    .login form,
-    .register form,
-    .changeUser form {
-        width: 316px;
-    }
-
-    .login form label,
-    .register form label,
-    .changeUser form label {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-
-    .login form input,
-    .register form input,
-    .changeUser form input {
-        margin-bottom: 16px;
-        font-size: 16px;
-    }
-
-    .login form input::placeholder,
-    .register form input::placeholder,
-    .changeUser form input::placeholder {
-        font-size: 16px;
-    }
-
-    .login button,
-    .register button,
-    .changeUser button {
-        font-size: 20px;
-        margin-bottom: 18px;
-    }
-
-    .login a,
-    .register a {
-
-        font-size: 20px;
-    }
-
-    .cart {
-        margin-top: 24px;
-    }
-
-    .cart-path a {
-        font-size: 16px;
-    }
-
-    .cart-title {
-        margin-top: 18px;
-        margin-bottom: 18px;
+    .interes-h {
         font-size: 26px;
     }
 
-    .cart-partsMobile {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 40px;
-    }
-
-    .cart-parts {
-        display: none;
-    }
-
-    .leftCartTitle {
-        margin-bottom: 11px;
-        font-size: 16px;
-    }
-
-    .cart-right form {
-        width: 100%;
-
-    }
-
-    .cart-right form label {
-        font-size: 16px;
-    }
-
-    .cart-right form input {
-        max-height: 42px;
-        font-size: 16px;
-    }
-
-    .cart-right form input::placeholder {
-        font-size: 14px;
-    }
-
-    .countCart {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .countCart a {
-        font-size: 16px;
-    }
-
-    .countCart p {
-        font-size: 16px;
-    }
-
-    .delete {
-        gap: 5px;
+    .interes-h img {
         height: 20px;
     }
 
-    .productCart {
-        margin-top: 30px;
-        padding-bottom: 0;
-        display: flex;
-        gap: 20px;
-        border-bottom: 0px;
-    }
-    
-    .imageProductCart {
-        width: 92px;
-        height: 83px;
-    }
-    
-    .infaCart {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 16px;
+    .interes-main {
+        max-width: 462px;
     }
 
-    .titleCartProduct {
+    .interes-image img {
+        max-width: 462px;
+    }
+
+    .interes-read img {
+        max-width: 15px;
+    }
+
+    .interes-read {
+        font-size: 15px;
+        top: 14px;
+        left: 12px;
+        padding: 5px 16px 5px 8px;
+        gap: 8px;
+    }
+
+    .interes-title {
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        padding: 18px 0;
+    }
+
+    .interes-title p {
+        max-width: 330px;
+        font-size: 21px;
+    }
+
+    .interes-info {
+        font-size: 13px;
+    }
+
+    .interes-info div {
+        gap: 5px;
+    }
+
+    .interes-info div img {
+        max-height: 13px;
+    }
+
+    .interes-side {
+        flex-direction: column;
+        padding-top: 22px;
+        gap: 13px;
+    }
+
+    .interes-info-read {
+        gap: 8px;
+        padding: 5px 9px;
+        font-size: 13px;
+    }
+
+    .interes-info-read img {
+        height: 12px;
+    }
+
+    .interes-side-item {
+        width: 100%;
+    }
+
+    .interes-info-title {
+        font-size: 14px;
+    }
+
+    .interes-side-image img {
+        max-height: 98px;
+    }
+
+    .interes-side-info {
+        justify-content: space-between;
+        max-height: 98px;
+    }
+
+    .interes-info-count img {
+        height: 13px;
+    }
+
+    .interes-info-count {
+        font-size: 9px;
+    }
+
+    .send-h1 {
+        font-size: 19px;
+        max-width: 340px;
+    }
+
+    .send-p {
+        font-size: 13px;
+        max-width: 340px;
+    }
+
+    .send-block img:first-child {
+        max-height: 87px;
+    }
+
+    .send-block {
+        padding: 39px 50px 20px 34px;
+        border-radius: 30px 30px 94px 30px;
+    }
+
+    .send-block form {
+        margin-bottom: 39px;
+    }
+
+    .send-block form input {
+        max-height: 55px;
+        padding: 19px 0 18px 17px;
+        font-size: 15px;
+    }
+
+    .send-block form input::placeholder {
+        font-size: 15px;
+    }
+
+    .send-block form button {
+        font-size: 18px;
+        padding: 16px 0;
+        text-align: center;
+        max-height: 55px;
+    }
+
+    .send-politic {
         font-size: 12px;
     }
 
-    .extraInfaCart {
+    .footer-info-up {
+        display: none;
+    }
+
+    .footer-accordion-down {
+        display: none;
+    }
+
+    .footer-accordion-up {
         display: flex;
-        width: 100%;
-        align-items: center;
         justify-content: space-between;
     }
 
-    .priceCart {
-        width: 66px;
-        height: 22px;
-        font-size: 12px;
+    .footer-down-accordion {
+        border-radius: 20px;
+        background-color: #ededed;
+        max-width: 440px;
+        width: 100%;
+        padding: 20px 38px;
+        font-size: 16px;
+        font-weight: 700;
     }
 
-    .counterCart {
+    .footer-accordion-up {
+        margin: 0;
+    }
+
+    .footer-accordion-down > .visible {
         display: flex;
-        width: max-content;
-        height: max-content;
-
     }
 
-    .counter--minus,
-    .counter--plus {
-        width: 30px;
-        height: 30px;
-    }
-    .counter--minus img,
-    .counter--plus img{
-        width: 15px;
-        height: 15px;
-    }
-    .counter--count {
-        width: 40px;
-        height: 30px;
-        font-size: 20px;
+    .down-numbers-title span {
+        display: block;
     }
 
-    .infaPriceCart {
-        margin-top: 31px;
-        padding-bottom: 17px;
-        border-top: 1px solid #8b8b8b;
-        border-bottom: 1px solid #8b8b8b;
+    .down-numbers {
+        text-align: center;
     }
 
-    .infaPriceText,
-    .infaPriceMain {
-        font-size: 18px;
+    .footer-messenger {
+        gap: 20px;
     }
 
-    .infaPriceExtra {
-        margin-top: 12px;
+    .footer-info-down {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 17px;
     }
 
-    .buttonCart {
-        height: 52px;
-        font-size: 20px;
+    .down-numbers {
+        gap: 6px;
+        flex-direction: column;
+        display: flex;
     }
 
-    .red-h {
-        font-size: 30px;
-    }
-    
-    .red-input {
-        width: auto;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    
-    .red-input label {
-        font-size: 18px;
-    }
-    
-    .red button {
-        font-size:14px;
-        padding: 12px 80px;
+    .down-numbers span {
+        margin-top: 6px;
     }
 
-    .red {
-        margin: 74px 30px;
+    .footer-down-phones {
+        align-items: center;
+    }
+
+    .footer-messenger a {
+        max-height: 66px;
+        max-width: 66px;
+    }
+
+    .footer-messenger a img {
+        max-height: 42px;
+        max-width: 42px;
+    }
+
+    .footer-right {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+    }
+
+    .block-mobile {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 100;
+        padding: 34px 0;
+        font-family: 'montserrat', sans-serif;
+        display: flex;
+        gap: 145px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .block-mobile div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .custom-controls button {
+        padding: 0;
+        height: 44px;
+        width: 44px;
+    }
+
+    @media (max-width: 700px) {
+
+        /*.max-width {*/
+        /*    max-width: 508px;*/
+        /*    margin: 0 auto;*/
+        /*}*/
+        .burger-menu div {
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .max-width-form {
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        .login,
+        .register,
+        .changeUser {
+            margin-top: 42px;
+            margin-bottom: 44px;
+        }
+
+        .login-h,
+        .register-h,
+        .changeUser-h {
+            font-size: 26px;
+            margin-bottom: 18px;
+        }
+
+        .login form,
+        .register form,
+        .changeUser form {
+            width: 440px;
+        }
+
+        .login form label,
+        .register form label,
+        .changeUser form label {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .login form input,
+        .register form input,
+        .changeUser form input {
+            margin-bottom: 22px;
+            font-size: 20px;
+        }
+
+        .login form input::placeholder,
+        .register form input::placeholder,
+        .changeUser form input::placeholder {
+            font-size: 20px;
+        }
+
+        .login button,
+        .register button,
+        .changeUser button {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .login a,
+        .register a {
+            font-size: 20px;
+        }
+    }
+
+
+    @media screen and (max-width: 400px) {
+        /*
+            .max-width {
+                max-width: 1200px;
+                margin: 0 auto;
+            } */
+        .max-width-form {
+            max-width: 316px;
+            margin: 0 auto;
+        }
+
+        .login,
+        .register,
+        .changeUser {
+            margin-top: 30px;
+            margin-bottom: 26px;
+        }
+
+        .login-h,
+        .register-h,
+        .changeUser-h {
+            font-size: 21px;
+            margin-bottom: 18px;
+        }
+
+        .login form,
+        .register form,
+        .changeUser form {
+            width: 316px;
+        }
+
+        .login form label,
+        .register form label,
+        .changeUser form label {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .login form input,
+        .register form input,
+        .changeUser form input {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .login form input::placeholder,
+        .register form input::placeholder,
+        .changeUser form input::placeholder {
+            font-size: 16px;
+        }
+
+        .login button,
+        .register button,
+        .changeUser button {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .login a,
+        .register a {
+
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 376px) {
+        .block-mobile {
+            gap: 36px;
+            font-size: 8px;
+        }
+
+        .block-mobile div {
+            gap: 5px;
+        }
+
+        .block-mobile div img {
+            height: 25px;
+            width: 25px;
+        }
+
+        .max-width {
+            padding: 0 30px;
+        }
+
+        .glide__slide {
+            width: 100%;
+            height: auto;
+        }
+
+        .popular-start {
+            gap: 10px;
+        }
+
+        .popular-end {
+            gap: 10px;
+        }
+
+        .popular-start .popular-block p {
+            font-size: 12px;
+        }
+
+        .popular-start .popular-block {
+            max-width: 144px;
+            max-height: 144px;
+        }
+
+        .popular-start .popular-block img {
+            max-width: 144px;
+            max-height: 144px;
+        }
+
+        .popular-end .popular-block:nth-child(1) {
+            max-width: 144px;
+            max-height: 144px;
+            font-size: 12px;
+        }
+
+        .popular-end .popular-block:nth-child(1) img {
+            max-width: 144px;
+            max-height: 144px;
+        }
+
+        .popular-end .popular-block:nth-child(2) {
+            max-width: 144px;
+            max-height: 144px;
+            font-size: 12px;
+        }
+
+        .popular-end .popular-block:nth-child(2) img {
+            max-width: 144px;
+            max-height: 144px;
+        }
+
+        .popular-end .popular-block:nth-child(3) {
+            max-width: 298px;
+            max-height: 144px;
+            font-size: 16px;
+        }
+
+        .popular-end .popular-block:nth-child(1) p {
+            font-size: 12px;
+        }
+
+        .popular-block p {
+            left: 9px;
+        }
+
+        .popular-h {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .popular-end .popular-block:nth-child(3) p {
+            left: 132px;
+            top: 63px;
+        }
+
+        .popular-end .popular-block:nth-child(2) p {
+            font-size: 12px;
+        }
+
+        .popular-end .popular-block:nth-child(3) p {
+            font-size: 16px;
+        }
+
+        .popular-end .popular-block:nth-child(3) img {
+            max-width: 298px;
+            max-height: 144px;
+        }
+
+        .pop-header p {
+            font-size: 16px;
+        }
+
+        .pop-header a p {
+            font-size: 12px;
+        }
+
+        .pop-header a img {
+            height: 12px;
+        }
+
+        .pop-item .pop-image img {
+            max-width: 146px;
+        }
+
+        .header-logo img {
+            max-width: 132px;
+        }
+
+        header .max-width {
+            gap: 13px;
+            align-items: center;
+        }
+
+        .header-input {
+            max-width: 137px;
+        }
+
+        .header-input input {
+            max-width: 137px;
+        }
+
+        header {
+            padding: 0 30px;
+        }
+
+        .categories .max-width {
+            gap: 26px;
+        }
+
+        .categories .max-width a {
+            font-size: 14px;
+        }
+
+        .burger-menu div {
+            border-radius: 20px;
+        }
+
+        .footer-messenger {
+            gap: 20px;
+        }
+
+        .footer-messenger a {
+            max-height: 36px;
+            max-width: 36px;
+        }
+
+        .footer-messenger a img {
+            max-height: 23px;
+            max-width: 23px;
+        }
+
+        .footer-right {
+            font-size: 8px;
+            padding: 23px 0;
+        }
+
+        .button-up a img {
+            height: 25px;
+            width: 25px;
+        }
+
+        .footer-messenger {
+            padding: 25px 0;
+        }
+
+        .footer-down-accordion {
+            max-width: 316px;
+            padding: 0;
+        }
+
+        .footer-accordion-up {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 14px 24px 14px 30px;
+        }
+
+        .footer-info-down {
+            gap: 6px;
+        }
+
+        .footer-down-phones {
+            margin-bottom: 45px;
+        }
+
+        .down-button {
+            font-size: 15px;
+            padding: 14px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .send-politic {
+            font-size: 9px;
+        }
+
+        .send-block form {
+            padding: 28px 36px 15px 25px;
+        }
+
+        .send-block form {
+            margin-bottom: 28px;
+        }
+
+        .send-block form button {
+            padding: 9px 0;
+            font-size: 18px;
+        }
+
+        .send-block form input::placeholder {
+            font-size: 12px;
+        }
+
+        .send-block form input {
+            font-size: 12px;
+            padding: 12px 0 12px 12px;
+            margin-bottom: 7px;
+        }
+
+        .send-block img:nth-child(2) {
+            width: 65px;
+            right: 27px;
+            bottom: 24px;
+        }
+
+        .send-block img:nth-child(1) {
+            width: 61px;
+            left: 7px;
+            top: 5px;
+        }
+
+        .send-h1 {
+            font-size: 16px;
+        }
+
+        .send-p {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        .interes-side-image img {
+            object-fit: cover;
+            max-width: 83px;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        .interes-info-read img {
+            height: 12px;
+        }
+
+        .interes-info-read {
+            align-items: center;
+            padding: 4px 8px;
+        }
+
+        .interes-info-read p {
+            font-size: 9px;
+        }
+
+        .interes-info-title {
+            font-size: 10px;
+        }
+
+        .interes-side-info {
+            gap: 0;
+            max-height: 80px;
+        }
+
+        .interes-info-count img {
+            max-height: 13px;
+        }
+
+        .interes-info-count {
+            gap: 5px;
+            color: #CBCBCB;
+            font-size: 6px;
+        }
+
+        .interes-image img {
+            max-width: 316px;
+        }
+
+        .interes-h {
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+
+        .interes-h img {
+            max-height: 12px;
+        }
+
+        .interes-title {
+            max-width: 244px;
+            border-radius: 20px;
+            padding: 10px 5px;
+        }
+
+        .interes-info {
+            left: 13px;
+            bottom: 8px;
+            font-size: 6px;
+            gap: 9px;
+        }
+
+        .interes-info img {
+            max-height: 13px;
+        }
+
+        .interes-title p {
+            font-size: 15px;
+        }
+
+        .interes {
+            margin-top: 24px;
+        }
+
+        .glide__slide p {
+            font-size: 13px;
+        }
+
+        .glide__slide img {
+            max-height: 125px;
+        }
+
+        .banner-bottom a {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
+        .custom-controls button {
+            max-height: 25px;
+            max-width: 25px;
+        }
+
+        .custom-controls button img {
+            max-height: 12px;
+        }
+
+        .glide__arrow--right {
+            right: 0.2em !important;
+        }
+        .glide__arrow--left {
+            left: 0.2em !important;
+        }
+        .custom-controls{
+            left: -30px;
+        }
     }
 }
