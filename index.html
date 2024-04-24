@@ -14,6 +14,11 @@
 <!--header-->
 <header>
     <div class="max-width">
+        <div class="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="header-logo">
             <a href="index.html"><img src="assets/image/logo.svg" alt=""></a>
         </div>
@@ -76,8 +81,10 @@
             <div class="banner-bottom">
                 <a href="">К рецептам</a>
                 <div class="custom-controls" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir="<"><img src="assets/image/banner_left.svg" alt=""></button>
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir=">"><img src="assets/image/banner_right.svg" alt=""></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir="<"><img
+                            src="assets/image/banner_left.svg" alt=""></button>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir=">"><img
+                            src="assets/image/banner_right.svg" alt=""></button>
                 </div>
             </div>
         </div>
@@ -317,6 +324,9 @@
         </div>
     </div>
 </div>
+<div class="button-up">
+    <a href="#"><img src="assets/image/button-up.svg" alt=""></a>
+</div>
 <footer>
     <div class="max-width">
         <div class="footer-info">
@@ -327,6 +337,7 @@
                 <div class="footer-down-accordion">
                     <div class="footer-accordion-up">
                         Партнёрам
+                        <img src="assets/image/down.svg" alt="">
                     </div>
                     <div class="footer-accordion-down">
                         <p>Новым поставщикам</p>
@@ -337,6 +348,7 @@
                 <div class="footer-down-accordion">
                     <div class="footer-accordion-up">
                         Карьера
+                        <img src="assets/image/down.svg" alt="">
                     </div>
                     <div class="footer-accordion-down">
                         <p>Вакансии</p>
@@ -348,6 +360,7 @@
                 <div class="footer-down-accordion">
                     <div class="footer-accordion-up">
                         Правовая инфомация
+                        <img src="assets/image/down.svg" alt="">
                     </div>
                     <div class="footer-accordion-down">
                         <p>Публичная оферта</p>
@@ -359,6 +372,7 @@
                 <div class="footer-down-accordion">
                     <div class="footer-accordion-up">
                         Помощь
+                        <img src="assets/image/down.svg" alt="">
                     </div>
                     <div class="footer-accordion-down">
                         <p>Правила сайта</p>
@@ -399,5 +413,32 @@
         </div>
     </div>
 </footer>
+<div class="block-mobile">
+    <div class="">
+        <img src="assets/image/mobile-cart.svg" alt="">
+        <p>Корзина</p>
+    </div>
+    <div class="">
+        <img src="assets/image/mobile-catalog.svg" alt="">
+        <p>Каталог</p>
+    </div>
+    <div class="">
+        <img src="assets/image/mobile-user.svg" alt="">
+        <p>Кабинет</p>
+    </div>
+</div>
+<script>
+    const accordions = document.querySelectorAll('.footer-down-accordion');
+
+    // Добавляем обработчики событий для каждого аккордеона
+    accordions.forEach(accordion => {
+        const up = accordion.querySelector('.footer-accordion-up');
+        const down = accordion.querySelector('.footer-accordion-down');
+
+        up.addEventListener('click', () => {
+            down.classList.toggle('visible');
+        });
+    });
+</script>
 </body>
 </html>
