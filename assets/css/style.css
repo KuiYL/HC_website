@@ -133,10 +133,12 @@ header .max-width {
 .banner {
     margin-top: 30px;
 }
+
 .custom-controls {
     position: relative;
 }
-.custom-controls button{
+
+.custom-controls button {
     background-color: rgb(120, 186, 82);
     border-width: initial;
     border-style: none;
@@ -147,18 +149,18 @@ header .max-width {
 
 }
 
-.glide__slide{
+.glide__slide {
     text-align: center;
 }
 
-.banner-bottom{
+.banner-bottom {
     max-width: 920px;
     margin: 29px auto 0;
     display: flex;
     justify-content: space-between;
 }
 
-.banner-bottom a{
+.banner-bottom a {
     font-size: 36px;
     font-family: montserrat, sans-serif;
     font-weight: 500;
@@ -168,12 +170,13 @@ header .max-width {
     border-radius: 13px;
 }
 
-.glide__slide p{
+.glide__slide p {
     margin-top: 28px;
     font-size: 36px;
     font-family: montserrat-italic, sans-serif;
     font-weight: 500;
 }
+
 /* Добавляем стили для кнопок */
 
 /*popular*/
@@ -1082,7 +1085,7 @@ footer {
     font-family: 'montserrat', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    letter-spacing: 0%;
+
     color: #111;
     margin-bottom: 22px;
 }
@@ -1101,7 +1104,7 @@ footer {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0%;
+
     color: #4C4C4C;
     margin-bottom: 16px;
 }
@@ -1117,7 +1120,7 @@ footer {
     font-size: 20px;
     color: #8B8B8B;
     font-weight: 400;
-    letter-spacing: 0%;
+
 }
 
 .login form input::placeholder,
@@ -1127,7 +1130,7 @@ footer {
     font-size: 20px;
     color: #8B8B8B;
     font-weight: 400;
-    letter-spacing: 0%;
+
 }
 
 .login button,
@@ -1138,7 +1141,7 @@ footer {
     font-size: 24px;
     padding: 20px 0;
     font-weight: 600;
-    letter-spacing: 0%;
+
     border: none;
     margin-bottom: 35px;
 }
@@ -1148,7 +1151,7 @@ footer {
     font-family: 'montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    letter-spacing: 0%;
+
     color: #333;
     background-color: transparent;
     border: 1px solid #78ba52;
@@ -1227,7 +1230,7 @@ footer {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0%;
+
     color: #4C4C4C;
     margin-bottom: 10px;
 }
@@ -1242,7 +1245,7 @@ footer {
     font-size: 20px;
     color: #8B8B8B;
     font-weight: 400;
-    letter-spacing: 0%;
+
 }
 
 .cart-left form input::placeholder {
@@ -1250,7 +1253,7 @@ footer {
     font-size: 20px;
     color: #8B8B8B;
     font-weight: 400;
-    letter-spacing: 0%;
+
 }
 
 .cart-right {
@@ -1613,7 +1616,7 @@ footer {
     font-size: 38px;
     font-weight: 400;
     text-align: center;
-    letter-spacing: 0%;
+
     color: #333;
 }
 
@@ -1629,7 +1632,7 @@ footer {
     font-family: 'montserrat', sans-serif;
     font-size: 22px;
     font-weight: 500;
-    letter-spacing: 0%;
+
 }
 
 .red-input input[type='text'] {
@@ -1648,7 +1651,7 @@ footer {
     font-size: 18px;
     color: #fff;
     font-weight: 600;
-    letter-spacing: 0%;
+
     border: none;
     padding: 21px 94.5px;
     background-color: #78ba52;
@@ -1959,5 +1962,138 @@ footer {
     border: 1px solid #78ba52;
     background: #fff;
     color: #333;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .max-width {
+        max-width: 508px;
+        margin: 0 auto;
+    }
+
+    .max-width-form {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .login,
+    .register,
+    .changeUser {
+        margin-top: 42px;
+        margin-bottom: 44px;
+    }
+
+    .login-h,
+    .register-h,
+    .changeUser-h {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .login form,
+    .register form,
+    .changeUser form {
+        width: 440px;
+    }
+
+    .login form label,
+    .register form label,
+    .changeUser form label {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .login form input,
+    .register form input,
+    .changeUser form input {
+        margin-bottom: 22px;
+        font-size: 20px;
+    }
+
+    .login form input::placeholder,
+    .register form input::placeholder,
+    .changeUser form input::placeholder {
+        font-size: 20px;
+    }
+
+    .login button,
+    .register button,
+    .changeUser button {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .login a,
+    .register a {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+/* 
+    .max-width {
+        max-width: 1200px;
+        margin: 0 auto;
+    } */
+
+    .max-width-form {
+        max-width: 316px;
+        margin: 0 auto;
+    }
+
+    .login,
+    .register,
+    .changeUser {
+        margin-top: 30px;
+        margin-bottom: 26px;
+    }
+
+    .login-h,
+    .register-h,
+    .changeUser-h {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    .login form,
+    .register form,
+    .changeUser form {
+        width: 316px;
+    }
+
+    .login form label,
+    .register form label,
+    .changeUser form label {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .login form input,
+    .register form input,
+    .changeUser form input {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .login form input::placeholder,
+    .register form input::placeholder,
+    .changeUser form input::placeholder {
+        font-size: 16px;
+    }
+
+    .login button,
+    .register button,
+    .changeUser button {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .login a,
+    .register a {
+
+        font-size: 20px;
+    }
 
 }
