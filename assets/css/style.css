@@ -1214,18 +1214,20 @@ footer {
     margin-bottom: 16px;
     font-family: 'montserrat', sans-serif;
 
-    font-weight: 500;
+    font-weight: 600;
     font-size: 26px;
     color: #333;
 }
 
-.cart-left form {
+.cart-left form,
+.cart-right form {
     width: 502px;
     display: flex;
     flex-direction: column;
 }
 
-.cart-left form label {
+.cart-left form label,
+.cart-right form label {
     margin-top: 10px;
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
@@ -1235,7 +1237,8 @@ footer {
     margin-bottom: 10px;
 }
 
-.cart-left form input {
+.cart-left form input,
+.cart-right form input {
     border-radius: 5px;
     width: 100%;
     height: 86px;
@@ -1248,6 +1251,7 @@ footer {
 
 }
 
+.cart-left form input::placeholder,
 .cart-left form input::placeholder {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
@@ -1336,8 +1340,8 @@ footer {
 
 .counterCart {
     display: flex;
-    width: 176px;
-    height: 58px;
+    width: max-content;
+    height: max-content;
 }
 
 .counter--minus {
@@ -1414,7 +1418,7 @@ footer {
 .buttonCart {
     margin-top: 25px;
     border-radius: 5px;
-    width: 560px;
+    width: 100%;
     height: 77px;
     background: #78ba52;
     font-family: 'montserrat', sans-serif;
@@ -1965,6 +1969,11 @@ footer {
 
 }
 
+.cart-partsMobile {
+    display: none;
+}
+
+
 @media screen and (max-width: 700px) {
 
     .max-width {
@@ -2028,15 +2037,155 @@ footer {
     .register a {
         font-size: 20px;
     }
+
+    .cart {
+        margin-top: 24px;
+    }
+
+    .cart-path a {
+        font-size: 16px;
+    }
+
+    .cart-title {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 26px;
+    }
+
+    .cart-partsMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .cart-parts {
+        display: none;
+    }
+
+    .leftCartTitle {
+        margin-bottom: 16px;
+        font-size: 26px;
+    }
+
+    .cart-right form {
+        width: 100%;
+
+    }
+
+    .cart-right form label {
+        font-size: 18px;
+    }
+
+    .cart-right form input {
+        max-height: 62px;
+        font-size: 18px;
+    }
+
+    .cart-right form input::placeholder {
+        font-size: 18px;
+    }
+
+    .countCart {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .countCart a {
+        font-size: 16px;
+    }
+
+    .countCart p {
+        font-size: 16px;
+    }
+
+    .delete {
+        gap: 5px;
+        height: 20px;
+    }
+
+    .productCart {
+        margin-top: 30px;
+        padding-bottom: 0;
+        display: flex;
+        gap: 20px;
+        border-bottom: 0px;
+    }
+
+    .infaCart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .titleCartProduct {
+        font-size: 19px;
+    }
+
+    .extraInfaCart {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .priceCart {
+        width: 104px;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .counterCart {
+        display: flex;
+        width: max-content;
+        height: max-content;
+
+    }
+
+    .counter--minus,
+    .counter--plus {
+        width: 42px;
+        height: 42px;
+    }
+
+    .counter--count {
+        width: 50px;
+        height: 42px;
+        font-size: 26px;
+    }
+
+    .infaPriceCart {
+        margin-top: 31px;
+        padding-bottom: 17px;
+        border-top: 1px solid #8b8b8b;
+        border-bottom: 1px solid #8b8b8b;
+    }
+
+    .infaPriceText,
+    .infaPriceMain {
+        font-size: 22px;
+    }
+
+    .infaPriceExtra {
+        margin-top: 17px;
+    }
+
+    .buttonCart {
+        height: 69px;
+        font-size: 23px;
+    }
+
 }
 
 
 @media screen and (max-width: 400px) {
-/* 
+
     .max-width {
-        max-width: 1200px;
+        max-width: 316px;
         margin: 0 auto;
-    } */
+    }
 
     .max-width-form {
         max-width: 316px;
@@ -2093,6 +2242,154 @@ footer {
     .login a,
     .register a {
 
+        font-size: 20px;
+    }
+
+    .cart {
+        margin-top: 24px;
+    }
+
+    .cart-path a {
+        font-size: 16px;
+    }
+
+    .cart-title {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 26px;
+    }
+
+    .cart-partsMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .cart-parts {
+        display: none;
+    }
+
+    .leftCartTitle {
+        margin-bottom: 11px;
+        font-size: 16px;
+    }
+
+    .cart-right form {
+        width: 100%;
+
+    }
+
+    .cart-right form label {
+        font-size: 16px;
+    }
+
+    .cart-right form input {
+        max-height: 42px;
+        font-size: 16px;
+    }
+
+    .cart-right form input::placeholder {
+        font-size: 14px;
+    }
+
+    .countCart {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .countCart a {
+        font-size: 16px;
+    }
+
+    .countCart p {
+        font-size: 16px;
+    }
+
+    .delete {
+        gap: 5px;
+        height: 20px;
+    }
+
+    .productCart {
+        margin-top: 30px;
+        padding-bottom: 0;
+        display: flex;
+        gap: 20px;
+        border-bottom: 0px;
+    }
+    
+    .imageProductCart {
+        width: 92px;
+        height: 83px;
+    }
+    
+    .infaCart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .titleCartProduct {
+        font-size: 12px;
+    }
+
+    .extraInfaCart {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .priceCart {
+        width: 66px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    .counterCart {
+        display: flex;
+        width: max-content;
+        height: max-content;
+
+    }
+
+    .counter--minus,
+    .counter--plus {
+        width: 30px;
+        height: 30px;
+    }
+    .counter--minus img,
+    .counter--plus img{
+        width: 15px;
+        height: 15px;
+    }
+    .counter--count {
+        width: 40px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .infaPriceCart {
+        margin-top: 31px;
+        padding-bottom: 17px;
+        border-top: 1px solid #8b8b8b;
+        border-bottom: 1px solid #8b8b8b;
+    }
+
+    .infaPriceText,
+    .infaPriceMain {
+        font-size: 18px;
+    }
+
+    .infaPriceExtra {
+        margin-top: 12px;
+    }
+
+    .buttonCart {
+        height: 52px;
         font-size: 20px;
     }
 
