@@ -2170,15 +2170,18 @@ footer {
     .pop-title {
         font-size: 12px;
         max-width: 134px;
+        margin-bottom: 6px;
     }
 
     .pop-weight {
         font-size: 12px;
+        margin-bottom: 6px;
     }
 
     .pop-price {
         font-size: 9px;
         font-weight: 700;
+        margin-bottom: 8px;
     }
 
     .pop-item form button {
@@ -2227,6 +2230,8 @@ footer {
 
     .interes-info {
         font-size: 13px;
+        left: 20px;
+        bottom: 10px;
     }
 
     .interes-info div {
@@ -2673,6 +2678,9 @@ footer {
         .pop-header p {
             font-size: 16px;
         }
+        .pop-item form button {
+            padding: 7px 0;
+        }
 
         .pop-header a p {
             font-size: 12px;
@@ -2928,6 +2936,9 @@ footer {
         }
         .custom-controls{
             left: -30px;
+        }
+        .block-mobile{
+            padding: 17px 0;
         }
     }
 }
