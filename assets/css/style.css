@@ -1552,6 +1552,10 @@ footer {
     max-width: 500px;
 }
 
+.product-right-adaptive {
+    display: none;
+}
+
 
 .product-name {
     font-family: 'montserrat', sans-serif;
@@ -2725,6 +2729,67 @@ footer {
         height: 22px;
     }
 
+<<<<<<< HEAD
+=======
+    .product .max-width.product-part .product-down {
+        display: flex;
+        height: 100%;
+    }
+
+    .product-right-adaptive {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .product-right-adaptive .block-name {
+        font-size: 26px;
+    }
+
+    .product-right-adaptive .block-text {
+        font-size: 17px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+
+    .product-right-adaptive .block-infa .block-item .numbers-item {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .product-right-adaptive .block-infa .block-item .name-item {
+        font-size: 18px;
+    }
+
+    .block-infa {
+        gap: 56px;
+    }
+
+    .accordion {
+        padding-top: 21px;
+        margin-bottom: 47px;
+    }
+
+    .accordion .max-width {
+        padding: 0 80px;
+    }
+
+    .product-top {
+        flex-direction: column;
+    }
+
+    .product-desc-adaptive .block-name {
+        font-size: 26px;
+        margin-top: 27px;
+    }
+
+    .product-desc-adaptive .block-text {
+        font-size: 17px;
+        margin-top: 21px;
+
+    }
+
+>>>>>>> 51f8ff50df64e29b92814cdd44de283011118ed1
     @media (max-width: 700px) {
 
         /*.max-width {*/
@@ -2967,7 +3032,12 @@ footer {
             max-width: 298px;
             max-height: 144px;
         }
-
+.pop-price{
+    max-width: 56px;
+    max-height: 19px;
+    margin-left: 11px;
+    border-radius: 5px  ;
+}
         .pop-header p {
             font-size: 16px;
         }
@@ -3439,6 +3509,126 @@ footer {
             padding: 10px 17px;
             max-width: 37px;
             max-height: 40px;
+        }
+
+        .product-left-adaptive img {
+            max-width: 315px;
+        }
+
+        .product .max-width {
+            padding: 0 30px;
+        }
+
+        .product-path {
+            margin-top: 20px;
+        }
+
+        .product-left-div {
+            align-items: center;
+        }
+
+        .product-left-div .product-star {
+            max-height: 15px;
+        }
+
+        .product-left-div .product-name {
+            font-size: 16px;
+        }
+
+        .product-left-div .product-weight-count p {
+            font-size: 16px;
+        }
+
+        .product-left-adaptive .infa .price-product p {
+            font-size: 19px;
+        }
+
+        .product-left-adaptive .infa .price-product {
+            max-width: 113px;
+            max-height: 38px;
+        }
+
+        .product-left-div .product-star p {
+            font-size: 13px;
+        }
+
+        .product-left-adaptive .product-button {
+            max-height: 45px;
+            font-size: 20px;
+        }
+
+        .product-desc-adaptive .block-name {
+            font-size: 15px;
+        }
+
+        .product-desc-adaptive .block-text {
+            font-size: 14px;
+            margin-top: 7px;
+        }
+
+        .product-right-adaptive .block-name {
+            font-size: 15px;
+        }
+
+        .product-right-adaptive .block-name {
+            font-size: 14px;
+        }
+
+        .product-left-div .product-star .groupStars img {
+            height: 15px;
+            width: 15px;
+        }
+
+        .product-right-adaptive .block-infa .block-item .numbers-item {
+            font-size: 18px;
+        }
+
+        .product-right-adaptive .block-infa .block-item .name-item {
+            font-size: 14px;
+        }
+
+        .block-infa {
+            gap: 26px;
+        }
+
+        .product-right-adaptive .block-infa .block-item .name-item {
+            text-wrap: nowrap;
+        }
+
+        .product-right-adaptive .block-text {
+            font-size: 14px;
+            margin: 16px 0;
+        }
+        .accordion .max-width{
+            padding: 0 30px;
+        }
+        .accordion{
+            margin-bottom: 26px;
+            padding-top: 0;
+        }
+        .product-part {
+            margin-top: 22px;
+        }
+
+        .product-path img {
+            max-height: 12px;
+        }
+
+        .product-path a {
+            font-size: 14px;
+        }
+        .details{
+            padding: 20px 0 0 0;
+        }
+        .details .details__title{
+            font-size: 15px;
+            padding: 0 0 20px 0;
+        }
+        .details::after{
+            top: 25px;
+        }
+        .details__content p{
+            font-size: 14px;
         }
     }
 }
