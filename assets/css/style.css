@@ -1298,7 +1298,7 @@ footer {
     display: flex;
     max-width: 700px;
     flex-direction: column;
-    
+
 }
 
 
@@ -1381,6 +1381,7 @@ footer {
     width: max-content;
     height: max-content;
 }
+
 .counter--minus {
     display: flex;
     justify-content: center;
@@ -2070,6 +2071,12 @@ footer {
         overflow-x: auto;
     }
 
+    .catalog-main-block .pop-item .pop-weight {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+
     .categories .max-width {
         border-top: 1px solid #d9d9d9;
         padding-left: 6px;
@@ -2526,7 +2533,7 @@ footer {
     }
 
     .catalog .max-width {
-   
+
         padding: 0px;
         gap: 29px;
     }
@@ -2578,26 +2585,26 @@ footer {
     .catalog-main-blocks .pop-item .pop-title {
         margin-top: 8px;
         margin-bottom: 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .catalog-main-blocks .pop-item .pop-star {
-        font-size: 9px;
+        font-size: 16px;
     }
 
+    .catalog-main-blocks .pop-item .pop-star img{
+       height: 18px;
+       width: 18px;
+    }
     .catalog-main-blocks .pop-item .pop-price {
-        font-size: 15px;
-        width: 88px;
-        height: 25px;
+        font-size: 18px;
+        max-width: 120px;
+        max-height: 34px;
         border-radius: 5px;
         margin-left: 10px;
         margin-bottom: 12px;
     }
 
-    .catalog-main-block .pop-item .pop-weight {
-        font-size: 15px;
-        margin-bottom: 12px;
-    }
 
     .catalog-main-block .pop-item form button {
         font-size: 12px;
@@ -2605,7 +2612,7 @@ footer {
 
     .catalog-switch {
         gap: 26px;
-        max-width:668px
+        max-width: 668px
     }
 
     .catalog-switch .button {
@@ -2655,7 +2662,6 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-bottom: 7px;
-        align-items: center;
     }
 
     .product-left-div .product-name {
@@ -2726,8 +2732,9 @@ footer {
         flex-direction: column;
         /* margin-top: px; */
 
-    
+
     }
+
     .product-right-adaptive .block-name {
         font-size: 26px;
     }
@@ -2774,7 +2781,7 @@ footer {
     }
 
 
- 
+
 
     .login,
     .register,
@@ -2972,16 +2979,16 @@ footer {
     .red-h {
         font-size: 30px;
     }
-    
+
     .red-input {
         gap: 15px;
         margin-top: 15px;
     }
-    
+
     .red-input label {
         font-size: 18px;
     }
-    
+
     .red button {
         font-size: 12px;
         padding: 16px 94.5px;
@@ -2991,18 +2998,48 @@ footer {
         margin: 74px 20px;
     }
 
-    
-    .pop{
+
+    .pop {
         margin-left: 30px;
         margin-right: 30px;
     }
-    .interes, .send{
+
+    .interes,
+    .send {
         margin-left: 103px;
         margin-right: 103px;
     }
 
+    .product,
+    .accordion {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .buttonActionProducts {
+        margin-top: 24px;
+    }
+
+    .buttonChangeProducts,
+    .buttonDeleteProducts {
+
+        width: 246px;
+        height: 52px;
+    }
+
+
+    .buttonAddProducts a,
+    .buttonChangeProducts a,
+    .buttonDeleteProducts a {
+        font-size: 19px;
+    }
+
+    .catalog-weight {
+        font-size: 15px;
+    }
+
 }
-    
+
 @media screen and (max-width: 400px) {
     .block-mobile {
         gap: 36px;
@@ -3019,7 +3056,9 @@ footer {
     }
 
 
-    .pop, .interes, .send{
+    .pop,
+    .interes,
+    .send {
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -3137,9 +3176,10 @@ footer {
         max-width: 146px;
     }
 
-    .pop-main{
+    .pop-main {
         gap: 10px;
     }
+
     .header-logo img {
         max-width: 132px;
     }
@@ -3431,7 +3471,7 @@ footer {
 
     .catalog--back {
         margin: 0 0 24px 38px;
-     
+
     }
 
     .catalog {
@@ -3458,7 +3498,7 @@ footer {
         max-height: 35px;
     }
 
-  
+
     .catalog-main-filter-adaptive {
         display: flex;
         gap: 8px;
@@ -3600,9 +3640,7 @@ footer {
         margin-top: 20px;
     }
 
-    .product-left-div {
-        align-items: center;
-    }
+
 
     .product-left-div .product-star {
         max-height: 15px;
@@ -3792,7 +3830,7 @@ footer {
         display: none;
     }
 
-    .product-left-adaptive .product-weight-count p{
+    .product-left-adaptive .product-weight-count p {
         font-size: 16px;
     }
 
@@ -3845,12 +3883,12 @@ footer {
         gap: 20px;
         border-bottom: 0px;
     }
-    
+
     .imageProductCart {
         width: 92px;
         height: 83px;
     }
-    
+
     .infaCart {
         display: flex;
         flex-direction: column;
@@ -3887,11 +3925,13 @@ footer {
         width: 30px;
         height: 30px;
     }
+
     .counter--minus img,
-    .counter--plus img{
+    .counter--plus img {
         width: 15px;
         height: 15px;
     }
+
     .counter--count {
         width: 40px;
         height: 30px;
@@ -3922,23 +3962,51 @@ footer {
     .red-h {
         font-size: 30px;
     }
-    
+
     .red-input {
         width: auto;
         gap: 15px;
         margin-top: 15px;
     }
-    
+
     .red-input label {
         font-size: 18px;
     }
-    
+
     .red button {
-        font-size:14px;
+        font-size: 14px;
         padding: 12px 80px;
     }
 
     .red {
         margin: 74px 30px;
+    }
+
+    .product,
+    .accordion {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .buttonActionProducts {
+        margin-top: 10px;
+    }
+
+    .buttonChangeProducts,
+    .buttonDeleteProducts {
+
+        width: 152px;
+        height: 36px;
+    }
+
+
+    .buttonAddProducts a,
+    .buttonChangeProducts a,
+    .buttonDeleteProducts a {
+        font-size: 13px;
+    }
+
+    .catalog-weight {
+        font-size: 12px;
     }
 }

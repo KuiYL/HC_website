@@ -63,18 +63,20 @@
             <div class="product-part">
                 <div class="product-top">
                     <section class="product-left">
-                        <p class="product-name">Блин с яблоком</p>
-                        <div class="product-star">
-                            <div class="groupStars">
-                                <img src="assets/image/star.svg" alt="">
-                                <img src="assets/image/star.svg" alt="">
-                                <img src="assets/image/star.svg" alt="">
-                                <img src="assets/image/star.svg" alt="">
-                                <img src="assets/image/star.svg" alt="">
+                        <div class="infa">
+                            <p class="product-name">Блин с яблоком</p>
+                            <div class="product-star">
+                                <div class="groupStars">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                </div>
+                                <p>4.5</p>
                             </div>
-                            <p>4.5</p>
                         </div>
-
+                       
                         <div class="infa">
                             <div class="price-product">
                                 <p>135 ₽ /шт</p>
@@ -83,7 +85,42 @@
                         </div>
 
                         <a href="cart.html" class="product-button">В корзину</a>
+                        <div class="buttonActionProducts">
+                            <div class="buttonChangeProducts">
+                                <a href="formChangeProduct.php?id=<?= $product['id'] ?>">Редактировать товар</a>
 
+                                <p></p>
+                            </div>
+                            <div class="buttonDeleteProducts">
+                                <a class="delete" href="?action=delete&id=<?= $product['id'] ?>">Удалить товар</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="product-left-adaptive">
+                        <div class="product-left-div">
+                            <p class="product-name">Блин с яблоком</p>
+                            <div class="product-star">
+                                <div class="groupStars">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                    <img src="assets/image/star.svg" alt="">
+                                </div>
+                                <p>4.5</p>
+                            </div>
+                        </div>
+                        <div class="product-weight-count">
+                            <p class="weight-product">160 г</p>
+                        </div>
+                        <img src="assets/image/productPage.svg" alt="">
+                        <div class="infa">
+                            <div class="price-product">
+                                <p>135 ₽ /шт</p>
+                            </div>
+                        </div>
+
+                        <a href="cart.html" class="product-button">В корзину</a>
                         <div class="buttonActionProducts">
                             <div class="buttonChangeProducts">
                                 <a href="formChangeProduct.php?id=<?= $product['id'] ?>">Редактировать товар</a>
@@ -96,12 +133,42 @@
                         </div>
 
                     </section>
-                    <section class="product-rightT">
+                    <section class="product-right">
                         <img src="assets/image/productPage.svg" alt="">
                     </section>
+                    <div class="product-desc-adaptive">
+                        <p class="block-name">Описание</p>
+
+                        <p class="block-text">Нежный блинчик, приготовленный на кокосовом «молоке», с сочной яблочной
+                            начинкой. Вкусное дополнение к душистому чаю и просто идеальный вариант для постного
+                            рациона! </p>
+                    </div>
+                    <div class="product-right-adaptive">
+                        <p class="block-name">О товаре</p>
+
+                        <p class="block-text">Пищевая ценность на 100 грамм</p>
+
+                        <div class="block-infa">
+                            <div class="block-item">
+                                <p class="numbers-item">182.4</p>
+                                <p class="name-item">Ккал</p>
+                            </div>
+                            <div class="block-item">
+                                <p class="numbers-item">2.3</p>
+                                <p class="name-item">Белки, г</p>
+                            </div>
+                            <div class="block-item">
+                                <p class="numbers-item">3.2</p>
+                                <p class="name-item">Жиры, г</p>
+                            </div>
+                            <div class="block-item">
+                                <p class="numbers-item">36.1</p>
+                                <p class="name-item">Углеводы, г</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
-
                 <div class="product-down">
                     <div class="product-left">
                         <p class="block-name">Описание</p>
@@ -359,6 +426,7 @@
             </div>
         </div>
     </footer>
+
     <div class="block-mobile">
         <div class="">
             <a href="category.html">
