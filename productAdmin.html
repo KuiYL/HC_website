@@ -76,7 +76,7 @@
                                 <p>4.5</p>
                             </div>
                         </div>
-                       
+
                         <div class="infa">
                             <div class="price-product">
                                 <p>135 ₽ /шт</p>
@@ -351,6 +351,7 @@
                     <div class="footer-down-accordion">
                         <div class="footer-accordion-up">
                             Партнёрам
+                            <img src="assets/image/down.svg" alt="">
                         </div>
                         <div class="footer-accordion-down">
                             <p>Новым поставщикам</p>
@@ -361,6 +362,7 @@
                     <div class="footer-down-accordion">
                         <div class="footer-accordion-up">
                             Карьера
+                            <img src="assets/image/down.svg" alt="">
                         </div>
                         <div class="footer-accordion-down">
                             <p>Вакансии</p>
@@ -372,6 +374,7 @@
                     <div class="footer-down-accordion">
                         <div class="footer-accordion-up">
                             Правовая инфомация
+                            <img src="assets/image/down.svg" alt="">
                         </div>
                         <div class="footer-accordion-down">
                             <p>Публичная оферта</p>
@@ -383,6 +386,7 @@
                     <div class="footer-down-accordion">
                         <div class="footer-accordion-up">
                             Помощь
+                            <img src="assets/image/down.svg" alt="">
                         </div>
                         <div class="footer-accordion-down">
                             <p>Правила сайта</p>
@@ -426,7 +430,6 @@
             </div>
         </div>
     </footer>
-
     <div class="block-mobile">
         <div class="">
             <a href="category.html">
@@ -447,6 +450,19 @@
             </a>
         </div>
     </div>
+    <script>
+        const accordions = document.querySelectorAll('.footer-down-accordion');
+
+        // Добавляем обработчики событий для каждого аккордеона
+        accordions.forEach(accordion => {
+            const up = accordion.querySelector('.footer-accordion-up');
+            const down = accordion.querySelector('.footer-accordion-down');
+
+            up.addEventListener('click', () => {
+                down.classList.toggle('visible');
+            });
+        });
+    </script>
 </body>
 
 </html>

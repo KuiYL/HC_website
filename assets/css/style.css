@@ -2592,10 +2592,11 @@ footer {
         font-size: 16px;
     }
 
-    .catalog-main-blocks .pop-item .pop-star img{
-       height: 18px;
-       width: 18px;
+    .catalog-main-blocks .pop-item .pop-star img {
+        height: 18px;
+        width: 18px;
     }
+
     .catalog-main-blocks .pop-item .pop-price {
         font-size: 18px;
         max-width: 120px;
@@ -2836,7 +2837,7 @@ footer {
     }
 
     .cart {
-        margin-top: 24px;
+        margin: 24px 80px 0 80px;
     }
 
     .cart-path a {
@@ -2852,10 +2853,10 @@ footer {
     .cart-partsMobile {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 508px;
         gap: 40px;
-        margin-left: 80px;
-        margin-right: 80px;
+        /* margin-left: 80px;
+        margin-right: 80px; */
     }
 
     .cart-parts {
@@ -2910,6 +2911,7 @@ footer {
         display: flex;
         gap: 20px;
         border-bottom: 0px;
+        width: 316px;
     }
 
     .infaCart {
@@ -2925,9 +2927,8 @@ footer {
 
     .extraInfaCart {
         display: flex;
-        width: 100%;
+        max-width: 300px;
         align-items: center;
-        justify-content: space-between;
     }
 
     .priceCart {
@@ -3036,6 +3037,10 @@ footer {
 
     .catalog-weight {
         font-size: 15px;
+    }
+
+    .visible {
+        display: flex;
     }
 
 }
@@ -3806,7 +3811,7 @@ footer {
     }
 
     .cart {
-        margin-top: 24px;
+        margin: 24px 30px 0 30px;
     }
 
     .cart-path a {
@@ -3822,7 +3827,7 @@ footer {
     .cart-partsMobile {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 316px;
         gap: 40px;
     }
 
@@ -3873,10 +3878,12 @@ footer {
 
     .delete {
         gap: 5px;
-        height: 20px;
+        height: 18px;
     }
 
     .productCart {
+        width: 312px;
+
         margin-top: 30px;
         padding-bottom: 0;
         display: flex;
@@ -3892,19 +3899,19 @@ footer {
     .infaCart {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 212px;
         gap: 16px;
     }
 
     .titleCartProduct {
         font-size: 12px;
+        width: max-content;
     }
 
     .extraInfaCart {
         display: flex;
-        width: 100%;
+        max-width: 200px;
         align-items: center;
-        justify-content: space-between;
     }
 
     .priceCart {
@@ -4008,5 +4015,9 @@ footer {
 
     .catalog-weight {
         font-size: 12px;
+    }
+
+    .visible {
+        display: flex;
     }
 }
