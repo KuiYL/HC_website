@@ -3778,12 +3778,13 @@ footer {
     }
 
     .product-left-adaptive .infa .price-product {
-        max-width: 113px;
+        max-width: 120px;
         max-height: 38px;
+        font-size: 12px;
+        
     }
 
     .product-left-div .product-star p {
-        font-size: 13px;
     }
 
     .product-left-adaptive .product-button {
