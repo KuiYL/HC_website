@@ -3147,16 +3147,15 @@ footer {
         margin-left: 56px;
     }
 
-    .send-block form button,
-    .popular-block,
-    .pop-item,
-    .down-button,
-    .product-button,
-    .switch-pages-profile a,
-    .buttonCart {
+    .send-block form button:hover,
+    .popular-block:hover,
+    .pop-item:hover,
+    .down-button:hover,
+    .product-button:hover,
+    .switch-pages-profile a:hover,
+    .buttonCart:hover {
         pointer-events: none;
     }
-
 
 }
 
@@ -3363,7 +3362,7 @@ footer {
 
     .footer-down-accordion {
         max-width: 316px;
-        padding: 0;
+        padding-left: 20px;
     }
 
     .footer-accordion-up {
@@ -4216,13 +4215,13 @@ footer {
         margin-left: 32px;
     }
 
-    .send-block form button,
-    .popular-block,
-    .pop-item,
-    .down-button,
-    .product-button,
-    .switch-pages-profile a,
-    .buttonCart {
+    .send-block form button:hover,
+    .popular-block:hover,
+    .pop-item:hover,
+    .down-button:hover,
+    .product-button:hover,
+    .switch-pages-profile a:hover,
+    .buttonCart:hover {
         pointer-events: none;
     }
 }
