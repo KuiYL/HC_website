@@ -210,6 +210,11 @@ header .max-width {
 
 .popular-block {
     position: relative;
+    transition: transform 0.3s;
+}
+
+.popular-block:hover {
+    transform: scale(1.02);
 }
 
 .popular-block p {
@@ -301,8 +306,16 @@ header .max-width {
     flex-direction: column;
     border-radius: 10px;
     max-width: 280px;
+    transition: transform 0.3s;
 
 }
+
+.pop-item:hover {
+    transform: scale(1.02);
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
 
 .pop-image {
     position: relative;
@@ -596,6 +609,11 @@ header .max-width {
     border: none;
     background-color: #F9F9F9;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.send-block form button:hover {
+    transform: scale(1.02);
 }
 
 .send-politic a {
@@ -674,6 +692,14 @@ footer {
     color: #fff;
     background-color: #78BA52;
     padding: 18px 72px;
+    border: 1px solid;
+
+}
+
+.down-button:hover {
+    color: #78BA52;
+    background-color: #fff;
+    border: 1px solid #78BA52;
 }
 
 .footer-messenger {
@@ -1177,10 +1203,11 @@ footer {
     font-weight: 600;
 
     border: none;
+    cursor: pointer;
     margin-bottom: 35px;
 }
 
-.login a,
+.login .logToregistr,
 .register a {
     font-family: 'montserrat', sans-serif;
     font-size: 24px;
@@ -1466,6 +1493,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #78ba52;
+
+}
+
+.buttonCart:hover {
+    background: #fff;
+    color: #78ba52;
+    border: 1px solid #78ba52;
 }
 
 .product-path {
@@ -1605,6 +1640,14 @@ footer {
     font-size: 35px;
     text-align: center;
     color: #fff;
+    border: 1px solid;
+
+}
+
+.product-button:hover {
+    background: #fff;
+    color: #78ba52;
+    border: 2px solid #78ba52;
 }
 
 
@@ -3047,19 +3090,27 @@ footer {
         max-width: 72px;
         max-height: 55px;
     }
+
     .extiProfileIcon {
         max-width: 34px;
         max-height: 34px;
     }
-    
+
     .nameUser {
         font-size: 24px;
     }
 
-    .about-count-month, .infa-about-blocks, .profile-inCatalog, .switch-pages-profile, .request {
+    .about-count-month,
+    .infa-about-blocks,
+    .profile-inCatalog,
+    .switch-pages-profile,
+    .request {
         margin-left: 80px;
     }
-    .about-count-month, .infa-about-blocks, .profile-inCatalog {
+
+    .about-count-month,
+    .infa-about-blocks,
+    .profile-inCatalog {
         max-width: 350px;
     }
 
@@ -3071,28 +3122,42 @@ footer {
     .profile-infa {
         max-width: 500px;
     }
+
     .switch-pages-profile a {
         height: 38px;
         font-size: 15px;
     }
+
     .about-count-month {
         font-size: 26px;
     }
+
     .infa-about-blocks {
         font-size: 18px;
     }
+
     .profile-inCatalog {
         font-size: 21px;
         height: 45px;
     }
-    
+
     .profile-requests {
         display: flex;
         flex-direction: column;
         margin-left: 56px;
     }
 
-    
+    .send-block form button,
+    .popular-block,
+    .pop-item,
+    .down-button,
+    .product-button,
+    .switch-pages-profile a,
+    .buttonCart {
+        pointer-events: none;
+    }
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -4076,13 +4141,12 @@ footer {
         max-height: 48px;
     }
 
-    .icon-user a img
-    {
+    .icon-user a img {
         max-width: 18px;
         max-height: 18px;
     }
-    .usericon
-    {
+
+    .usericon {
         max-width: 46px;
         max-height: 48px;
     }
@@ -4091,15 +4155,22 @@ footer {
         max-width: 18px;
         max-height: 18px;
     }
-    
+
     .nameUser {
         font-size: 16px;
     }
 
-    .about-count-month, .infa-about-blocks, .profile-inCatalog, .switch-pages-profile, .request {
+    .about-count-month,
+    .infa-about-blocks,
+    .profile-inCatalog,
+    .switch-pages-profile,
+    .request {
         margin-left: 30px;
     }
-    .about-count-month, .infa-about-blocks, .profile-inCatalog {
+
+    .about-count-month,
+    .infa-about-blocks,
+    .profile-inCatalog {
         max-width: 214px;
     }
 
@@ -4115,29 +4186,43 @@ footer {
     .profile-infa {
         max-width: 303px;
     }
+
     .switch-pages-profile a {
         height: 32px;
         font-size: 10px;
     }
+
     .about-count-month {
         font-size: 16px;
     }
+
     .infa-about-blocks {
         font-size: 12px;
     }
+
     .profile-inCatalog {
         font-size: 18px;
         height: 41px;
     }
 
-    .confirm, .cancel {
+    .confirm,
+    .cancel {
         max-width: 351px;
-        height:39px;
+        height: 39px;
         font-size: 16px;
     }
+
     .profile-requests {
         margin-left: 32px;
     }
 
- 
+    .send-block form button,
+    .popular-block,
+    .pop-item,
+    .down-button,
+    .product-button,
+    .switch-pages-profile a,
+    .buttonCart {
+        pointer-events: none;
+    }
 }
