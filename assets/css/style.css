@@ -3043,6 +3043,56 @@ footer {
         display: flex;
     }
 
+    .icon-user {
+        max-width: 72px;
+        max-height: 55px;
+    }
+    .extiProfileIcon {
+        max-width: 34px;
+        max-height: 34px;
+    }
+    
+    .nameUser {
+        font-size: 24px;
+    }
+
+    .about-count-month, .infa-about-blocks, .profile-inCatalog, .switch-pages-profile, .request {
+        margin-left: 80px;
+    }
+    .about-count-month, .infa-about-blocks, .profile-inCatalog {
+        max-width: 350px;
+    }
+
+    .profile-infa .max-width {
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .profile-infa {
+        max-width: 500px;
+    }
+    .switch-pages-profile a {
+        height: 38px;
+        font-size: 15px;
+    }
+    .about-count-month {
+        font-size: 26px;
+    }
+    .infa-about-blocks {
+        font-size: 18px;
+    }
+    .profile-inCatalog {
+        font-size: 21px;
+        height: 45px;
+    }
+    
+    .profile-requests {
+        display: flex;
+        flex-direction: column;
+        margin-left: 56px;
+    }
+
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -4020,4 +4070,74 @@ footer {
     .visible {
         display: flex;
     }
+
+    .icon-user {
+        max-width: 64px;
+        max-height: 48px;
+    }
+
+    .icon-user a img
+    {
+        max-width: 18px;
+        max-height: 18px;
+    }
+    .usericon
+    {
+        max-width: 46px;
+        max-height: 48px;
+    }
+
+    .extiProfileIcon {
+        max-width: 18px;
+        max-height: 18px;
+    }
+    
+    .nameUser {
+        font-size: 16px;
+    }
+
+    .about-count-month, .infa-about-blocks, .profile-inCatalog, .switch-pages-profile, .request {
+        margin-left: 30px;
+    }
+    .about-count-month, .infa-about-blocks, .profile-inCatalog {
+        max-width: 214px;
+    }
+
+    .profile-infa .max-width {
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .profile .max-width {
+        gap: 24px;
+    }
+
+    .profile-infa {
+        max-width: 303px;
+    }
+    .switch-pages-profile a {
+        height: 32px;
+        font-size: 10px;
+    }
+    .about-count-month {
+        font-size: 16px;
+    }
+    .infa-about-blocks {
+        font-size: 12px;
+    }
+    .profile-inCatalog {
+        font-size: 18px;
+        height: 41px;
+    }
+
+    .confirm, .cancel {
+        max-width: 351px;
+        height:39px;
+        font-size: 16px;
+    }
+    .profile-requests {
+        margin-left: 32px;
+    }
+
+ 
 }
